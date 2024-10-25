@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About</title>
+    <style>
+    body{
+        margin: 0%;
+        padding: 0%;
+       
+    }
+    header{
+        color: white;
+    }
+    header a{
+text-decoration: none;
+padding: 125px;
+color: black;
+    }
+    
+   main a {
+        text-decoration: none;
+    }
+    footer{
+        position: fixed;
+        left: 50px;
+        bottom: 0%;
+    }
+   main a:hover{
+        color: hotpink;
+        background-color: white;
+    }
+   main a:active{
+        color: blue;
+        background-color: green;
+    }
+    
+    .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+        .mySlides {
+            display: none;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 28px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+</style>
+</head>
+<body>
+    <header>
+        <a href="a.html">About</a>
+        <a href="s.html">Services</a>
+        <a href="c.html">Contact</a>
+    </header>
+
+<div class="slideshow-container">
+    <div class="mySlides" style="background-image: url('welcome.jpg');"><br><br><br><br><br><br><center><p><h1 style="color: white;"><b><i>WELCOME TO RAJASTHAN</i></b></h1></p></center></h1></div>
+    <div class="mySlides" style="background-image: url('camel.jpg');"><br><br><br><br><br><br><center><p><h1 style="color: white;"><i>Explore Rajasthan at different historical places.We are here to explore you at</i></h1> </p></center></div>
+    <div class="mySlides" style="background-image: url('pink.jpg');"><br><br><br><br><br><br><center><h1 style="color: white;"><i><b>Jaipur the Pink City,</b></i></h1></center></div>
+    <div class="mySlides" style="background-image: url('mehre.jpg');"><br><br><br><br><br><br><center><h1 style="color: white;"><i><b>Jhodjpur to explore Fort's,</b></i></h1><br><br><br><br><br><br><h3 style="color: whitesmoke;"><i><tt>We are promising you to have a Thrilling Visit</tt></i></h3></center></div>
+    <div class="mySlides" style="background-image: url('lake.jpg');"><br><br><br><br><br><br><center><h1 style="color: white;"><i><b>Udaipur the City of Lakes,</b></i></h1><br><br><br><br><br><br><h3 style="color: whitesmoke;"><i><tt>Feel peace and introspection</tt></i></h3></center></div>
+    <div class="mySlides" style="background-image: url('utt.jpg');"><br><br><br><br><br><br><center><h1 style="color: white;"><i><b>Jaishalmer to explore Thar Desert and have Camel ride,</b></i></h1></center></div>
+    <div class="mySlides" style="background-image: url('Haveli_mandawa.jpg');"><br><br><br><br><br><br><center><h1 style="color: white;"><i><b>Jhunjhunu to explore the Havelies where different celebrities come to shoot movies.</b></i></h1></center> </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
+</script>
+
+
+
+</body>
+</html>
